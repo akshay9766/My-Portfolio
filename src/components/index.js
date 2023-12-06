@@ -23,7 +23,7 @@ export function Index() {
 
     return (
         <div className="container-fluid">
-            <BrowserRouter>
+            <BrowserRouter basename="/My-Portfolio">
                 <div className="row">
                     <div className="col-sm-2 fixed-top one bg-dark" style={{ height: "800px" }}>
                         <img src="photo.jpg" width="200px" height="200px" className="rounded-circle border border-default border-5" />
@@ -48,7 +48,7 @@ export function Index() {
                         <nav>
                                 <ScrollToTop/>
                                     <Routes>
-                                        <Route path="/" element={<Home />} />
+                                        <Route path="/My-Portfolio" element={<Home />} />
                                         <Route path="home" element={<Home />} />
                                         <Route path="aboutus" element={<AboutUs />} />
                                         <Route path="contact" element={<Contact />} />
