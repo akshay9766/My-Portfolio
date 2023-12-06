@@ -1,0 +1,102 @@
+#circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 5.1px;
+    stroke-dasharray: 137;
+    stroke-dashoffset: 137;
+    animation: anim 1s linear forwards;
+}
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 7;
+    }
+}
+
+#card {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.8s;
+    padding: 30px 50px;
+    background: #fff;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+#card:hover {
+    height: 300px;
+    scale: 1.05;
+}
+
+.img1 {
+    margin-left: -230px;
+    margin-top: 5px;
+}
+.content{
+    opacity: 0;
+    transform: translateY(-400px);
+}
+
+#card:hover > .content{
+    opacity: 1;
+    transform: translateY(-100px);
+    
+}
+#circle1 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 5.1px;
+    stroke-dasharray: 137;
+    stroke-dashoffset: 137;
+    animation: anim1 1s linear forwards;
+}
+
+@keyframes anim1 {
+    100% {
+        stroke-dashoffset: 14;
+    }
+}
+#circle2 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 5.1px;
+    stroke-dasharray: 137;
+    stroke-dashoffset: 137;
+    animation: anim2 1s linear forwards;
+}
+
+@keyframes anim2 {
+    100% {
+        stroke-dashoffset: 5;
+    }
+}
+
+#circle4 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 5.1px;
+    stroke-dasharray: 137;
+    stroke-dashoffset: 137;
+    animation: anim4 1s linear forwards;
+}
+
+@keyframes anim4 {
+    100% {
+        stroke-dashoffset: 7;
+    }
+}
+#circle5 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 5.1px;
+    stroke-dasharray: 137;
+    stroke-dashoffset: 137;
+    animation: anim5 1s linear forwards;
+}
+
+@keyframes anim5 {
+    100% {
+        stroke-dashoffset: 5;
+    }
+}

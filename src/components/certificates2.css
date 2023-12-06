@@ -1,0 +1,14 @@
+canvas.react-pdf__Page__canvas {
+    margin-bottom: 50px;
+}
+
+.download-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+}
