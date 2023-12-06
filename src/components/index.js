@@ -48,7 +48,7 @@ export function Index() {
                         <nav>
                                 <ScrollToTop/>
                                     <Routes>
-                                        <Route path="/My-Portfolio" element={<Home />} />
+                                        <Route exact path="/My-Portfolio" element={<Home />} />
                                         <Route path="home" element={<Home />} />
                                         <Route path="aboutus" element={<AboutUs />} />
                                         <Route path="contact" element={<Contact />} />
