@@ -1,4 +1,5 @@
-import { BrowserRouter ,Link, Route,Routes} from "react-router-dom";
+import { useState } from "react"
+import { BrowserRouter ,Link, Route, Router, Routes} from "react-router-dom";
 import { Home } from "./home";
 import { AboutUs } from "./aboutus";
 import { Contact } from "./contact";
@@ -23,7 +24,7 @@ export function Index() {
 
     return (
         <div className="container-fluid">
-            <BrowserRouter basename="/My-Portfolio">
+            <BrowserRouter>
                 <div className="row">
                     <div className="col-sm-2 fixed-top one bg-dark" style={{ height: "800px" }}>
                         <img src="photo.jpg" width="200px" height="200px" className="rounded-circle border border-default border-5" />
@@ -38,11 +39,11 @@ export function Index() {
                             </nav>
                         </div>
                         <div className="d-flex " style={{ marginTop: "60px" }}>
-                            <i class="bi bi-facebook bi-fill text-primary me-3" style={{ fontSize: "25px" }}></i>
-                            <i class="bi bi-instagram bi-fill text-danger me-3" style={{ fontSize: "25px" }}></i>
-                            <i class="bi bi-linkedin bi-fill text-primary me-3" style={{ fontSize: "25px" }}></i>
-                            <i class="bi bi-whatsapp bi-fill text-success me-3" style={{ fontSize: "25px" }}></i>
-                        </div>
+                                <a href="https://www.facebook.com/akshay.rayate.37" ><i class="bi bi-facebook bi-fill text-primary me-3" style={{ fontSize: "25px" }} /></a>
+                                <a href="https://instagram.com/akshay_rayate_?igshid=ZDdkNTZiNTM=" ><i class="bi bi-facebook bi-instagram text-danger me-3" style={{ fontSize: "25px" }} /></a>
+                                <i class="bi bi-linkedin bi-fill text-primary me-3" style={{ fontSize: "25px" }} />
+                                <a href="https://api.whatsapp.com/send?phone=9766387043" ><i class="bi bi-whatsapp bi-instagram text-success me-3" style={{ fontSize: "25px" }} /></a>
+                            </div>
                     </div>
                     <div className="col-sm-10 two " style={{marginLeft:"240px"}}>
                         <nav>
