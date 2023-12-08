@@ -24,8 +24,7 @@ export function Index() {
 
     return (
         <div className="container-fluid">
-            <BrowserRouter>
-                <HashRouter basename="/">
+            <BrowserRouter basename="/">
                     <div className="row">
                         <div className="col-sm-2 fixed-top one bg-dark" style={{ height: "800px" }}>
                             <img src="photo.jpg" width="200px" height="200px" className="rounded-circle border border-default border-5" />
@@ -66,7 +65,6 @@ export function Index() {
                             </nav>
                         </div>
                     </div>
-                </HashRouter>
             </BrowserRouter>
         </div>
     )
