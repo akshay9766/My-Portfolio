@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Document, Page } from 'react-pdf';
 import { Document2 } from './document2';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCookies } from 'react-cookie';

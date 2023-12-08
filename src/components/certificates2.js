@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useCookies } from 'react-cookie';
 import { Document, Page } from 'react-pdf';
+import { useParams } from 'react-router';
 import "./certificates2.css"
 
 export function Certificates2() {
