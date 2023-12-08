@@ -1,28 +1,7 @@
-import { NavDropdown, Navbar, Nav, Container } from "react-bootstrap"
-import { useState } from "react";
-
-
 export function Contact() {
-    const [formState, setFormState] = useState({});
 
 
-    const changeHandler = (event) => {
-        setFormState({ ...formState, [event.target.name]: event.target.value });
-    };
-
-    const submitHnadler = (event) => {
-        event.preventDefault();
-        const config = {
-            SecureToken: '5675a6c4-06a9-4427-a2e8-4f845946e53e',
-            To: "akshay1999@yopmail.com",
-            From: formState.email,
-            Subject: "Mail from porfolio",
-            Body: `${formState.name} connected to you over email`
-        };
-        if (window.Email) {
-            window.Email.send(config).then(() => alert("Email send successfully"));
-        }
-    }
+    
     return (
         <div className="container-fluid" style={{ backgroundImage: "url(bg3.gif)" }}>
             <div style={{ backgroundImage: "url(contactme.png)", height: "200px" }}>
